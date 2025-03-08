@@ -37,5 +37,13 @@ public class QuadradoTest extends TestCase {
         Quadrado q1 = new Quadrado(3);
         Quadrado q2 = new Quadrado(4);
         assertTrue(q1.compareTo(q2) < 0);
+
+        Quadrado q3 = new Quadrado(5);
+        Quadrado q4 = new Quadrado(4);
+        assertTrue(q1.compareTo(q2) > 0);
+
+        Quadrado q5 = new Quadrado(4);
+        Quadrado q6 = new Quadrado(4);
+        assertEquals(0, q1.compareTo(q2));
     }
 }
