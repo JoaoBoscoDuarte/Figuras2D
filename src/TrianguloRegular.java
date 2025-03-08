@@ -1,7 +1,7 @@
-public class Quadrado implements FiguraGeometrica2D {
+public class TrianguloRegular implements FiguraGeometrica2D {
     private double lado;
 
-    public Quadrado(double lado) {
+    public TrianguloRegular(double lado) {
         this.lado = lado;
     }
 
@@ -14,15 +14,15 @@ public class Quadrado implements FiguraGeometrica2D {
     }
 
     public double getArea() {
-        return getLado() * getLado();
+        return getLado() * getLado() * Math.sqrt(3)/4;
     }
 
     public double getPerimetro() {
-        return 4 * getLado();
+        return 3 * getLado();
     }
 
     public String getTipoFigura() {
-        return "Quadrado";
+        return "Triângulo regular";
     }
 
     public int compareTo(FiguraGeometrica2D o) {
